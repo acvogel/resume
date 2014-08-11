@@ -1,0 +1,199 @@
+%% cv-us.tex
+%
+% Jason R. Blevins 
+% Curriculum Vitae
+%
+% http://jrblevin.freeshell.org
+%
+% Copyright (C) 2004-2006 Jason Blevins <jrblevin@sdf.lonestar.org>
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents, however, I do ask that you
+% please leave this notice and the above URL in the source code if you
+% choose to redistribute this file.
+%
+% $Id: cv-us.tex,v 1.23 2006/06/21 00:14:55 jrblevin Exp $
+%
+%%---------------------------------------------------------------------------
+%
+% Notes:
+%
+% * To create a new page use
+%   \newpage \opening
+%
+% * res.cls includes an \address{} command which can be used up to twice,
+%   but my address is too long for the format it uses.
+%
+% * Alternate documentclass statement to put headings in margin:
+%   \documentclass[margin,line,11pt,final]{res}
+%
+% * Can divide publication/presentation list into subsections by year:
+%   \section{\bf\small\hspace{8mm}2006}
+%
+%%----------------------------------------------------------------------------
+\documentstyle[hyperref, margin, line]{res}
+
+\hypersetup{backref,pdfpagemode=Full,colorlinks=true,backref}
+
+\addtolength{\oddsidemargin}{-0.45in}
+\addtolength{\voffset}{-0.30in}
+\addtolength{\textwidth}{1.00in} \addtolength{\textheight}{1.50in}
+
+\renewcommand{\namefont}{\LARGE\emph}
+
+%%===========================================================================%%
+
+\begin{document}
+
+%---------------------------------------------------------------------------
+% Document Specific Customizations
+
+% Make lists without bullets and with no indentation
+\setlength{\leftmargini}{0em}
+\renewcommand{\labelitemi}{}
+
+% Use large bold font for printed name at top of pages
+\renewcommand{\namefont}{\large\textbf}
+
+\newcommand{\remove}[1]{}
+
+%---------------------------------------------------------------------------
+
+\name{Adam Vogel}
+
+\begin{resume}
+\begin{ncolumn}{2}
+  Gates Building Room 124 & (217) 621-9287 \\
+  353 Serra Mall& { av@cs.stanford.edu } \\
+  Stanford, CA 94305 & { \verb+http://cs.stanford.edu/~av/+} \\
+\end{ncolumn}
+
+%---------------------------------------------------------------------------
+
+
+\section{\bf Education}
+\begin{formatb}
+\title{l}\dates{r}\\
+\employer{l}\location{r}\\
+%\body\\
+\end{formatb}
+
+\title{\textbf{Stanford University}}
+\dates{2008 -- August 2014}
+\employer{Doctor of Philosophy in Computer Science}
+\location{}
+\begin{position}
+\end{position}
+
+\title{\textbf{University of Illinois at Urbana-Champaign}}
+\dates{2003 -- 2007}
+\employer{Bachelor of Science in Computer Science, Minor in Mathematics}
+\location{3.9 GPA (4.0 scale)}
+\begin{position}
+\end{position}
+
+\section{\bf Employment}
+
+ \begin{format}
+ \employer{l}\location{r}\\
+ \title{l}\dates{r}\\
+ \body\\
+ \end{format}
+
+ \title{Research Assistant}
+ \employer{\textbf{Stanford University}}
+ \location{Stanford, CA}
+ \dates{September 2008 -- August 2014}
+ \begin{position}
+  Pioneered the application of multi-agent reinforcement learning to grounded language learning, with additional research in sentiment analysis, information extraction, and robotics. 
+  Managed several teams of students, published 10 papers, and presented at international conferences. \remove{Java, Scala, Python, C++.}
+ \end{position}
+
+ \title{Research Intern}
+ \employer{\textbf{Honda Research Institute}}
+ \location{Mountain View, CA}
+ \dates{June 2011 -- August 2011}
+ \begin{position}
+  Invented a technique to lower fuel consumption in hybrid vehicles by predicting driving routes using inverse reinforcement learning, awarded US patent 20140018985 A1.
+  \remove{Java.}
+ \end{position}
+
+ \title{Teaching Assistant}
+ \employer{\textbf{Stanford University}}
+ \location{Stanford, CA}
+ \dates{November 2011 -- May 2012}
+ \begin{position}
+ Led a team of five to develop automatically-graded programming assignments for the Stanford Natural Language Processing Coursera course, used by 40,000 students.
+ \remove{Java and Python.}
+ \end{position}
+
+ \title{Research Programmer}
+ \employer{\textbf{University of Illinois}}
+ \location{Champaign, IL}
+ \dates{December 2007 -- August 2008}
+ \begin{position}
+ Created a machine learning based context-sensitive spelling correction plugin for Firefox.  \remove{C++.}
+ \end{position}
+
+ \title{Research Engineer}
+ \employer{\textbf{RiverGlass Inc.}}
+ \location{Champaign, IL}
+ \dates{May 2006 -- December 2007} 
+ \begin{position}
+	Designed and developed a machine learning based natural language
+	processing tool to extract relationships between named 
+	entities in text. \remove{Java and C++.}
+ \end{position}
+
+ \title{Software Developer}
+ \employer{\textbf{Abbott Laboratories}}
+ \location{Waukegan, IL}
+ \dates{May 2005 -- Aug 2005}
+ \begin{position}
+Implemented a suite of tools to analyze contract system performance logs and improve uptime. \remove{Perl and COBOLOL.}
+ \end{position}
+
+\section{\textsc{Key Publications}}
+\begin{itemize}
+\item Adam Vogel, Max Bodoia, Christopher Potts, and Dan Jurafsky. Emergence of Gricean Maxims from Multi-Agent Decision Theory. NAACL 2013.
+\item Kevin Reschke, Adam Vogel, and Dan Jurafsky. Generating Recommendation Dialogs by Extracting Information from User Reviews. ACL 2013.
+\item Adam Vogel and Dan Jurafsky. Learning to Follow Navigational Directions. ACL 2010.
+\end{itemize}
+
+\section{Select Honors}
+\begin{itemize}
+\item National Science Foundation Graduate Research Fellowship, 2008
+\item Computing Research Association Outstanding Undergraduate Award, Honorable Mention, 2006
+\remove{\item Outstanding Intern Award, Abbott Laboratories, 2005}
+\item Intel International Science and Engineering Fair Finalist, 2003
+\remove{\item American Association for Artificial Intelligence Special Award Winner, 2003}
+\end{itemize}
+
+
+
+%%---------------------------------------------------------------------------%%
+
+
+
+ \section{\bf Skills}
+ \begin{itemize}
+ \item Computer: Java, Scala, Python, C++, Perl, Matlab, git, \LaTeX, Amazon Mechanical Turk 
+ \item Mathematical: Machine Learning, Probabilistic Graphical Models, Reinforcement Learning, Game Theory, Convex Optimization, Mathematical Logic, Graph Theory
+ \end{itemize}
+
+
+%%---------------------------------------------------------------------------%%
+
+%\begin{center}
+%\vspace{\fill}\ \newlin
+%{\tiny \rm $ $RCSfile: cv-us.tex,v $ $ }
+%{\tiny \rm $ $Date: 2006/06/21 00:14:55 $ $ }
+%{\tiny \rm $ $Revision: 1.23 $ $ }
+%\end{center}
+
+\end{resume}
+
+\end{document}
+
+%%===========================================================================%%
